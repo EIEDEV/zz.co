@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    appearance: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    background-color: black;
+    height: fit-content;
+}
+
+nav img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+nav div {
+    width: 140px;
+    height: 40px;
+    border: 0;
+    background-color: red;
+    color: black;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+}
+
+.a .inner-question {
+    width: 700px;
+    background-color: rgba(128, 128, 128, 0.5);
+    padding: 20px;
+}
+
+.a .inner-question #questions {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.a .inner-question #answer-buttons {
+    margin-top: 40px;
+    height: fit-content;
+}
+
+.a .answer {
+    width: 100%;
+    padding: 20px;
+    color: black;
+    background-color: white;
+    border: 0;
+    height: 40px;
+    margin-bottom: 15px;
+    margin-right: 60px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: 1px solid black;
+}
+#answer-buttons .answer:hover:not([disabled]){
+    background-color: rgba(128, 128, 128, 0.5);
+    cursor: pointer;
+}
+
+.a .inner-question #next {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: red;
+}
+.a .inner-question #next:hover{
+    cursor: pointer;
+}
+
+#answer-buttons .answer.incorrect{
+    background-color: red;
+}
+
+#answer-buttons .answer.correct{
+    background-color: green;
+}
+.disabled{
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+.block{
+    display: block;
+}
+.hide{
+    display: none;
+}
+.a .inner-question #home {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: red;
+    text-decoration: none;
+    color: black;
+}
